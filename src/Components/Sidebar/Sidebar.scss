@@ -1,0 +1,78 @@
+@import "../../styles/utils/reset";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+img {
+  height: 2rem;
+}
+.container-sidebar {
+  display: flex;
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+.visible-nav {
+  transform: translateX(0px) !important;
+}
+.sidebar {
+  flex-shrink: 0;
+  width: 80px;
+  min-height: 100vh;
+  background: #000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.sidebar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5rem;
+  margin-left: 20%;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.sidebar ul li img {
+  width: 40px;
+
+  height: 40px;
+}
+
+.toggle-nav-btn {
+  position: absolute;
+  z-index: 150;
+  top: -2px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.toggle-nav-btn img {
+  width: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,141 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+img {
+  height: 2rem;
+}
+
+.container-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+}
+
+.visible-nav {
+  -webkit-transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
+}
+
+.sidebar {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 80px;
+  min-height: 100vh;
+  background: #000;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+.sidebar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: grey;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  margin-top: 5rem;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.sidebar li:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.sidebar ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+.toggle-nav-btn {
+  position: absolute;
+  z-index: 150;
+  top: -2px;
+  left: 10px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-nav-btn img {
+  width: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .container-sidebar {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar ul li img {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=Sidebar.css.map */

@@ -1,3 +1,8 @@
 @import "./styles/utils/reset";
 @import "./styles/utils/variables";
 @import "./styles/utils/mixins";
+
+h1 {
+  text-align: center;
+  padding-top: 5rem;
+}
