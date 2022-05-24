@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import iconSet from "../../assets/selection.json";
+import IcomoonReact, { iconList } from "icomoon-react";
 // imports des icones
 import home_icone_white from "../../assets/icones/red/home_red.svg";
 import product_icone_white from "../../assets/icones/red/produit_red.svg";
@@ -47,32 +48,36 @@ export default function Sidebar() {
           <ul>
             <li>
               <NavLink to={"/"}>
-                <img src={home_icone_white} alt="icone accueil" />
+                <IcomoonReact iconSet={iconSet} size={40} icon="home_red" />
               </NavLink>
             </li>
             <NavLink to={"/commande"}>
               <li>
-                <img src={commande_icone_white} alt="icone commandes" />
+                <IcomoonReact iconSet={iconSet} size={40} icon="commande_red" />
               </li>
             </NavLink>
             <NavLink to={"/demmande"}>
               <li>
-                <img src={demmande_icone_white} alt="icone demmandes" />
+                <IcomoonReact iconSet={iconSet} size={40} icon="demande_red" />
               </li>
             </NavLink>
             <NavLink to={"/produit"}>
               <li>
-                <img src={product_icone_white} alt="icone produits" />
+                <IcomoonReact iconSet={iconSet} size={40} icon="produit_red" />
               </li>
             </NavLink>
             <NavLink to={"/fournisseur"}>
               <li>
-                <img src={fournisseur_icone_white} alt="icone fournisseurs" />
+                <IcomoonReact
+                  iconSet={iconSet}
+                  size={40}
+                  icon="fournisseur_red"
+                />
               </li>
             </NavLink>
             <NavLink to={"/kanban"}>
               <li>
-                <img src={kanban_icone_white} alt="icone kanban" />
+                <IcomoonReact iconSet={iconSet} size={40} icon="kanban_red" />
               </li>
             </NavLink>
           </ul>

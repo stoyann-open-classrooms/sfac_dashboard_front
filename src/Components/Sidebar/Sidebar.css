@@ -79,6 +79,7 @@ img {
   list-style-type: none;
   width: 100%;
   margin-top: 9.3rem;
+  margin-left: 18px;
 }
 
 .sidebar a {
@@ -96,7 +97,6 @@ img {
   width: 50px;
   margin-top: 4rem;
   background-color: white;
-  margin-left: 20%;
   cursor: pointer;
 }
 
@@ -106,11 +106,12 @@ img {
 }
 
 a.active {
-  background-color: #e3001b;
+  background-color: #ec919a;
 }
 
-.sidebar ul li img {
+.sidebar ul li {
   width: 40px;
+  text-align: center;
   height: 40px;
 }
 
