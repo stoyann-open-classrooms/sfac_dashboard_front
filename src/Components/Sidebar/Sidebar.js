@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // imports des icones
-import home_icone_white from "../../assets/icones/white/home_white.svg";
-import product_icone_white from "../../assets/icones/white/produit_white.svg";
-import commande_icone_white from "../../assets/icones/white/commande_white.svg";
-import demmande_icone_white from "../../assets/icones/white/demande_white.svg";
-import fournisseur_icone_white from "../../assets/icones/white/fournisseur_white.svg";
-import kanban_icone_white from "../../assets/icones/white/kanban_white.svg";
+import home_icone_white from "../../assets/icones/red/home_red.svg";
+import product_icone_white from "../../assets/icones/red/produit_red.svg";
+import commande_icone_white from "../../assets/icones/red/commande_red.svg";
+import demmande_icone_white from "../../assets/icones/red/demande_red.svg";
+import fournisseur_icone_white from "../../assets/icones/red/fournisseur_red.svg";
+import kanban_icone_white from "../../assets/icones/red/kanban_red.svg";
 import burger_icone from "../../assets/icones/burger_icone.svg";
 import close_icone from "../../assets/icones/close_icone.svg";
 import "./Sidebar.css";
@@ -45,36 +45,36 @@ export default function Sidebar() {
       >
         <aside className="sidebar">
           <ul>
-            <Link to={"/"}>
-              <li>
+            <li>
+              <NavLink to={"/"}>
                 <img src={home_icone_white} alt="icone accueil" />
-              </li>
-            </Link>
-            <Link to={"/commande"}>
+              </NavLink>
+            </li>
+            <NavLink to={"/commande"}>
               <li>
                 <img src={commande_icone_white} alt="icone commandes" />
               </li>
-            </Link>
-            <Link to={"/demmande"}>
+            </NavLink>
+            <NavLink to={"/demmande"}>
               <li>
                 <img src={demmande_icone_white} alt="icone demmandes" />
               </li>
-            </Link>
-            <Link to={"/produit"}>
+            </NavLink>
+            <NavLink to={"/produit"}>
               <li>
                 <img src={product_icone_white} alt="icone produits" />
               </li>
-            </Link>
-            <Link to={"/fournisseur"}>
+            </NavLink>
+            <NavLink to={"/fournisseur"}>
               <li>
                 <img src={fournisseur_icone_white} alt="icone fournisseurs" />
               </li>
-            </Link>
-            <Link to={"/kanban"}>
+            </NavLink>
+            <NavLink to={"/kanban"}>
               <li>
                 <img src={kanban_icone_white} alt="icone kanban" />
               </li>
-            </Link>
+            </NavLink>
           </ul>
         </aside>
       </nav>

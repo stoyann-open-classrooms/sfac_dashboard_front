@@ -78,10 +78,10 @@ img {
 .sidebar ul {
   list-style-type: none;
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 9.3rem;
 }
 
-.sidebar li {
+.sidebar a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,18 +91,22 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: grey;
   border-radius: 10px;
   height: 50px;
   width: 50px;
-  margin-top: 5rem;
+  margin-top: 4rem;
+  background-color: white;
   margin-left: 20%;
   cursor: pointer;
 }
 
-.sidebar li:active {
+.sidebar a:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+a.active {
+  background-color: #e3001b;
 }
 
 .sidebar ul li img {
@@ -113,16 +117,15 @@ img {
 .toggle-nav-btn {
   position: absolute;
   z-index: 150;
-  top: -2px;
-  left: 10px;
+  top: 10px;
+  left: 12px;
   width: 55px;
   height: 55px;
-  border-radius: 50%;
   cursor: pointer;
 }
 
 .toggle-nav-btn img {
-  width: 25px;
+  width: 50px;
 }
 
 @media screen and (max-width: 900px) {
