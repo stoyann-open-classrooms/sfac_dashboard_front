@@ -1,6 +1,21 @@
+@import "../../styles/utils/reset";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+@import "../../styles/utils/animations";
+
 .recap_container {
   padding-top: 2.9rem;
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-bottom: 2rem;
+  animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.home-body {
+  display: flex;
+  justify-content: center;
+  .left {
+    width: 50%;
+  }
 }
