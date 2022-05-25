@@ -71,7 +71,7 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 80px;
-  min-height: 100vh;
+  height: 94vh;
   background: #000;
 }
 
@@ -118,7 +118,7 @@ a.active {
 .toggle-nav-btn {
   position: absolute;
   z-index: 150;
-  top: 10px;
+  top: -5px;
   left: 12px;
   width: 55px;
   height: 55px;

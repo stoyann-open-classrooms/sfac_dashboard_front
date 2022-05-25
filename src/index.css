@@ -45,8 +45,8 @@ button:active {
           transform: scale(0.98);
 }
 
-h1 {
-  text-align: center;
-  padding-top: 5rem;
+main {
+  margin-left: 8rem;
+  height: 94vh;
 }
 /*# sourceMappingURL=index.css.map */
