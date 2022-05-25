@@ -6,3 +6,9 @@ main {
   margin-left: 8rem;
   height: 94vh;
 }
+
+@media screen and (max-width: 900px) {
+  main {
+    margin-left: 0;
+  }
+}

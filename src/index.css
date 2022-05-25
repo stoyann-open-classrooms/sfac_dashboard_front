@@ -21,6 +21,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  max-height: 100vh;
 }
 
 a {
@@ -48,5 +49,11 @@ button:active {
 main {
   margin-left: 8rem;
   height: 94vh;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */

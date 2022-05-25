@@ -1,0 +1,38 @@
+.card-recap {
+  height: 9rem;
+  text-align: center;
+  width: 25rem;
+  background-color: #fbfbfb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 1rem;
+  padding: 1.5rem;
+
+  h3 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #282d30;
+    margin-bottom: 1rem;
+  }
+  .card-recap_nb {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .card-recap {
+    text-align: center;
+    width: 15rem;
+
+    h3 {
+      font-weight: bolder;
+      font-size: 0.8rem;
+
+      padding-top: 0.8rem;
+      margin-bottom: 0;
+    }
+    .card-recap_nb {
+      font-size: 1.9rem;
+    }
+  }
+}

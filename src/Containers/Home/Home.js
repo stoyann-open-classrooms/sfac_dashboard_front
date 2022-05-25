@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardRecap from "../../Components/CardRecap/CardRecap";
-
+import "./Home.css";
 export default function Home() {
   const [dataDemande, setDataDemande] = useState();
 
@@ -17,11 +17,10 @@ export default function Home() {
 
   return (
     <main>
-      <h1>Home</h1>
-      <section className="recap">
-        <CardRecap />
-        <CardRecap />
-        <CardRecap />
+      <section className="recap_container">
+        <CardRecap txt={"Commandes en cours"} nb={16} />
+        <CardRecap txt={"Demandes a traiter"} nb={3} />
+        <CardRecap txt={"Commandes en retard"} nb={8} />
       </section>
     </main>
   );

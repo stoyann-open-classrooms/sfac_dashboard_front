@@ -21,6 +21,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  max-height: 100vh;
 }
 
 a {
