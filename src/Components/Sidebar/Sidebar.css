@@ -71,14 +71,14 @@ img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: 80px;
-  height: 94vh;
+  height: 95vh;
   background: #000;
 }
 
 .sidebar ul {
   list-style-type: none;
   width: 100%;
-  margin-top: 9.3rem;
+  margin-top: 6vh;
   margin-left: 18px;
 }
 
@@ -118,8 +118,8 @@ a.active {
 .toggle-nav-btn {
   position: absolute;
   z-index: 150;
-  top: -5px;
-  left: 12px;
+  top: 0px;
+  left: 15px;
   width: 55px;
   height: 55px;
   cursor: pointer;
