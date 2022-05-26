@@ -2,7 +2,7 @@
   background-color: grey;
   margin: 1rem 3rem;
   color: white;
-  height: 92vh;
+  height: 80vh;
   border-radius: 10px;
 }
 
@@ -12,5 +12,26 @@
   font-size: 1.5rem;
   padding-top: 2rem;
   text-align: center;
+  position: relative;
   height: 10%;
+
+  button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+
+    img {
+      height: 3rem;
+    }
+  }
+}
+
+.fournisseur-tableau__content {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  height: 720px;
 }

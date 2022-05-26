@@ -1,0 +1,20 @@
+.fournisseur-card {
+  height: 100px;
+  background-color: white;
+  color: black;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.fourniseur-card__image-container {
+  background-color: #bcbcbc;
+  height: 100%;
+  width: 30%;
+  margin-right: 1rem;
+  border-radius: 10px 0 0 10px;
+}
+/*# sourceMappingURL=FournisseurCard.css.map */
