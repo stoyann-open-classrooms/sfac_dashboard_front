@@ -1,4 +1,5 @@
 import React from "react";
+import CardCommande from "../CardCommande/CardCommande";
 import "./TabnleauCommandes.css";
 export default function TableauCommandes() {
   return (
@@ -10,7 +11,20 @@ export default function TableauCommandes() {
           <input id="searchbar" />
         </form>
       </div>
-      <div className="body"></div>
+      <div className="body">
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+        <CardCommande />
+      </div>
     </section>
   );
 }

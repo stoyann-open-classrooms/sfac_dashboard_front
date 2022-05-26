@@ -1,3 +1,115 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  max-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  padding: 0.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+fieldset {
+  border: none;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(50deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(-50%);
+    transform: rotateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(50deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(-50%);
+    transform: rotateX(-50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .btn-modal {
   padding: 10px;
 }
@@ -5,15 +117,20 @@
 .overlay {
   color: white;
   position: absolute;
+  z-index: 888888;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.615);
+  background: rgba(0, 0, 0, 0.715);
 }
 
 .modal {
   z-index: 99999;
+  -webkit-animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-top 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-box-shadow: 0px 10px 35px 0px white;
+          box-shadow: 0px 10px 35px 0px white;
   position: absolute;
   top: 40%;
   left: 50%;

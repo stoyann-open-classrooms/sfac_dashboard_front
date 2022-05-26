@@ -46,4 +46,10 @@
   left: 155px;
   font-size: 1.3rem;
 }
+
+.body {
+  height: 600px;
+  overflow: auto;
+  text-align: center;
+}
 /*# sourceMappingURL=TabnleauCommandes.css.map */

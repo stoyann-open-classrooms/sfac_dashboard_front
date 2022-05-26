@@ -1,10 +1,12 @@
 import React from "react";
 import ModalAddFournisseur from "../../Components/ModalAddFournisseur/ModalAddFournisseur";
 import FournisseurTableau from "../../Components/FournisseurTableau/FournisseurTableau";
+import AddIcone from "../../assets/icones/red/add_red.png";
+
 export default function Product() {
   return (
     <main>
-      <ModalAddFournisseur modalTitle={"Ajouter un Produit"} />
+      <ModalAddFournisseur icone={AddIcone} modalTitle={"Ajouter un Produit"} />
       <FournisseurTableau txt={"Produits"} />
     </main>
   );
