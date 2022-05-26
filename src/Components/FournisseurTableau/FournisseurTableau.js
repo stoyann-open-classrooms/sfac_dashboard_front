@@ -3,6 +3,7 @@ import FournisseurCard from "../FournisseurCard/FournisseurCard";
 import "./FournisseurTableau.css";
 import trashIcone from "../../assets/icones/red/trash_red.svg";
 import editIcone from "../../assets/icones/edit_icone.svg";
+import ModalAddFournisseur from "../ModalAddFournisseur/ModalAddFournisseur";
 
 export default function FournisseurTableau(props) {
   const [dataFournisseur, setDataFournisseur] = useState();
@@ -29,6 +30,7 @@ export default function FournisseurTableau(props) {
             <h3> {fournisseur.nom} </h3>
             </FournisseurCard>
         ))} */}
+
         <FournisseurCard>
           <div className="fourniseur-card__image-container"></div>
           <div className="fournisseur-card__content">
@@ -38,12 +40,2374 @@ export default function FournisseurTableau(props) {
               excepturi.
             </p>
             <div className="fournisseur-card__footer">
-              <button className="btn-fournisseur-card">
-                <img src={editIcone} alt="" />
-              </button>
-              <button className="btn-fournisseur-card">
-                <img src={trashIcone} alt="" />
-              </button>
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
+            </div>
+          </div>
+        </FournisseurCard>
+        <FournisseurCard>
+          <div className="fourniseur-card__image-container"></div>
+          <div className="fournisseur-card__content">
+            <h3>Auxilis</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+              excepturi.
+            </p>
+            <div className="fournisseur-card__footer">
+              <ModalAddFournisseur
+                icone={editIcone}
+                modalTitle={"modifier le  fournisseur"}
+              />
+              <ModalAddFournisseur
+                icone={trashIcone}
+                modalTitle={"supprimer le  fournisseur"}
+              />
             </div>
           </div>
         </FournisseurCard>

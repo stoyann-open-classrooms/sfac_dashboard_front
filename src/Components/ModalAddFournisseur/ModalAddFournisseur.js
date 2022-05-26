@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ModalAddFournisseur.css";
-import AddIcone from "../../assets/icones/red/add_red.png";
 import CloseIcone from "../../assets/icones/close_icone.svg";
 export default function ModalAddFournisseur(props) {
   const [modal, setModal] = useState(false);
@@ -10,9 +9,9 @@ export default function ModalAddFournisseur(props) {
   };
 
   return (
-    <div>
+    <>
       <button onClick={toggleModal} className="btn-modal">
-        <img src={AddIcone} alt="bouton ouverture modal" />
+        <img src={props.icone} alt="bouton ouverture modal" />
       </button>
       {modal && (
         <div className="overlay">
@@ -27,6 +26,6 @@ export default function ModalAddFournisseur(props) {
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
