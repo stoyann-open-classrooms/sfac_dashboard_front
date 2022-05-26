@@ -61,6 +61,7 @@ fieldset {
 main {
   margin-left: 8rem;
   height: 94vh;
+  padding: 0 2%;
 }
 
 @media screen and (max-width: 900px) {

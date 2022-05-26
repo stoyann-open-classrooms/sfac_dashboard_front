@@ -1,9 +1,12 @@
 import React from "react";
+import FournisseurTableau from "../../Components/FournisseurTableau/FournisseurTableau";
+import ModalAddFournisseur from "../../Components/ModalAddFournisseur/ModalAddFournisseur";
 
 export default function Kanban() {
   return (
     <main>
-      <h1>Kanban</h1>
+      <ModalAddFournisseur modalTitle={"Ajouter un Kanban"} />
+      <FournisseurTableau txt={"Kanban"} />
     </main>
   );
 }

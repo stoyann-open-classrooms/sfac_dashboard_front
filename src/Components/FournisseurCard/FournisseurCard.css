@@ -10,6 +10,14 @@
   width: 300px;
 }
 
+.fournisseur-card h3 {
+  margin-top: 1rem;
+}
+
+.fournisseur-card p {
+  margin: 1rem 0;
+}
+
 .fourniseur-card__image-container {
   background-color: #bcbcbc;
   height: 100%;

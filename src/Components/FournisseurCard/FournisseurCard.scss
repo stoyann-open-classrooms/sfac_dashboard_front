@@ -6,6 +6,12 @@
   display: flex;
   border-radius: 10px;
   width: 300px;
+  h3 {
+    margin-top: 1rem;
+  }
+  p {
+    margin: 1rem 0;
+  }
 }
 
 .fourniseur-card__image-container {

@@ -3,8 +3,8 @@ import ModalAddFournisseur from "../../Components/ModalAddFournisseur/ModalAddFo
 export default function Fournisseur() {
   return (
     <main>
-      <ModalAddFournisseur />
-      <FournisseurTableau />
+      <ModalAddFournisseur modalTitle={"Ajouter un fournisseur"} />
+      <FournisseurTableau txt={"Fournisseurs"} />
     </main>
   );
 }
