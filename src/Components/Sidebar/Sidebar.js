@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import iconSet from "../../assets/selection.json";
-import IcomoonReact, { iconList } from "icomoon-react";
+import IcomoonReact from "icomoon-react";
 // imports des icones
-import home_icone_white from "../../assets/icones/red/home_red.svg";
-import product_icone_white from "../../assets/icones/red/produit_red.svg";
-import commande_icone_white from "../../assets/icones/red/commande_red.svg";
-import demmande_icone_white from "../../assets/icones/red/demande_red.svg";
-import fournisseur_icone_white from "../../assets/icones/red/fournisseur_red.svg";
-import kanban_icone_white from "../../assets/icones/red/kanban_red.svg";
+
 import burger_icone from "../../assets/icones/burger_icone.svg";
 import close_icone from "../../assets/icones/close_icone.svg";
 import "./Sidebar.css";
