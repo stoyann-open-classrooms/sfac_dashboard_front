@@ -1,0 +1,17 @@
+.fournisseur-tableau {
+  background-color: grey;
+  margin: 1rem 3rem;
+  color: white;
+  height: 92vh;
+  border-radius: 10px;
+}
+
+.fournisseur-tableau__top {
+  border-radius: 10px 10px 0 0;
+  background-color: black;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  text-align: center;
+  height: 10%;
+}
+/*# sourceMappingURL=FournisseurTableau.css.map */

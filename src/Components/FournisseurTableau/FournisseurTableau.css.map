@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,SAAS;EACjB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;EACZ,aAAa,EAAE,IAAI;CACpB;;AAED,AAAA,yBAAyB,CAAC;EACxB,aAAa,EAAE,aAAa;EAC5B,gBAAgB,EAAE,KAAK;EACvB,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,IAAI;EACjB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,GAAG;CACZ",
+    "sources": [
+        "FournisseurTableau.scss"
+    ],
+    "names": [],
+    "file": "FournisseurTableau.css"
+}

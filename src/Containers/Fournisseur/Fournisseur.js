@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import FournisseurTableau from "../../Components/FournisseurTableau/FournisseurTableau";
 
 export default function Fournisseur() {
   const [dataFournisseur, setDataFournisseur] = useState();
@@ -16,7 +17,7 @@ export default function Fournisseur() {
   console.log(dataFournisseur);
   return (
     <main>
-      <h1>Fournisseurs</h1>
+      <FournisseurTableau />
     </main>
   );
 }

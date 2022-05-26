@@ -6,7 +6,7 @@ export default function TableauCommandes() {
       <div className="top">
         <h1>Commandes en cours</h1>
         <form className="container-searchbar">
-          <label htmlFor="searchbar">Rechercher une commande</label>
+          {/* <label htmlFor="searchbar">Rechercher une commande</label> */}
           <input id="searchbar" />
         </form>
       </div>

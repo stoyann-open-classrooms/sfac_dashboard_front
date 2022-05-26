@@ -118,12 +118,13 @@ button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .home-body .left {
-  width: 50%;
+  width: 70%;
+}
+
+.home-body .right {
+  width: 30%;
 }
 /*# sourceMappingURL=Home.css.map */
