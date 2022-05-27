@@ -43,7 +43,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 2rem;
-  height: 720px;
+  height: 80%;
 }
 
 .fournisseur-card__footer {
