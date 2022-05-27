@@ -15,9 +15,15 @@
 }
 
 .fourniseur-card__image-container {
-  background-color: rgb(188, 188, 188);
-  height: 100%;
-  width: 50%;
-  margin-right: 1rem;
+  // background-color: rgb(255, 255, 255);
+  height: 100px;
+  width: 40%;
+  margin: 0 1rem;
   border-radius: 10px 0 0 10px;
+  img {
+    height: 100px;
+
+    width: 80%;
+    object-fit: contain;
+  }
 }

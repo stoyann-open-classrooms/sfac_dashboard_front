@@ -19,10 +19,16 @@
 }
 
 .fourniseur-card__image-container {
-  background-color: #bcbcbc;
-  height: 100%;
-  width: 50%;
-  margin-right: 1rem;
+  height: 100px;
+  width: 40%;
+  margin: 0 1rem;
   border-radius: 10px 0 0 10px;
+}
+
+.fourniseur-card__image-container img {
+  height: 100px;
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=FournisseurCard.css.map */

@@ -4,8 +4,8 @@ export const fournisseurSlice = createSlice({
   name: "fournisseurs",
   initialState: { value: [] },
   reducers: {
-    getFournisseur: (state, action) => {
-      // to ecrire le code pour recuperer la liste des fournisseurs a la base de données
+    getFournisseur: (state, { payload }) => {
+      state.initialState.value = payload;
     },
     addFournisseur: (state, action) => {
       // to ecrire le code pour ajouter un fournisseur a la base de données
@@ -18,3 +18,5 @@ export const fournisseurSlice = createSlice({
     },
   },
 });
+
+export default fournisseurSlice.reducer;

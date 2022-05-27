@@ -6,10 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-
+import fournisseurReducer from "./features/Fournisseurs";
 const store = configureStore({
   reducer: {
-    // fournisseurs:,
+    fournisseurs: fournisseurReducer,
   },
 });
 

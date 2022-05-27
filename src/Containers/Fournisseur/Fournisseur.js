@@ -7,8 +7,26 @@ export default function Fournisseur() {
     <main>
       <ModalAddFournisseur
         icone={AddIcone}
-        modalTitle={"Ajouter un fournisseur"}
-      />
+        modalTitle={"ajouter un  fournisseur"}
+      >
+        <label htmlFor="name">Nom du fournisseur</label>
+        <input type="text" />
+        <label htmlFor="name">adresse du fournisseur</label>
+        <input type="text" />
+        <label htmlFor="name">site internet du fournisseur</label>
+        <input type="text" />
+        <label for="avatar">Logo du fournisseur</label>
+
+        <input
+          type="file"
+          id="logo"
+          name="logo_fournisseur"
+          accept="image/png, image/jpeg, image/png"
+        />
+        <button className="btn-form-submit" type="submit">
+          Ajouter
+        </button>
+      </ModalAddFournisseur>
       <FournisseurTableau txt={"Fournisseurs"} />
     </main>
   );

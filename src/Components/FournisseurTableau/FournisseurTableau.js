@@ -4,53 +4,46 @@ import "./FournisseurTableau.css";
 import trashIcone from "../../assets/icones/red/trash_red.svg";
 import editIcone from "../../assets/icones/edit_icone.svg";
 import ModalAddFournisseur from "../ModalAddFournisseur/ModalAddFournisseur";
+import axios from "axios";
 
 export default function FournisseurTableau(props) {
-  const [dataFournisseur, setDataFournisseur] = useState();
+  const [fournisseurData, setFournisseurData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/sfac/api/fournisseur/allFournisseurs")
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setDataFournisseur(data);
-      });
+    axios
+      .get("http://localhost:5000/sfac/api/fournisseur/allFournisseurs")
+      .then((res) => setFournisseurData(res.data));
   }, []);
-  console.log(dataFournisseur);
+
+  console.log(fournisseurData);
+
   return (
     <section className="fournisseur-tableau">
       <div className="fournisseur-tableau__top">
         <h1>{props.txt}</h1>
       </div>
       <div className="fournisseur-tableau__content">
-        {/* {dataFournisseur.map((fournisseur, index) => (
-            <FournisseurCard key={fournisseur.id}>
-            <h3> {fournisseur.nom} </h3>
-            </FournisseurCard>
-        ))} */}
+        {fournisseurData.map((fournisseur, index) => (
+          <FournisseurCard key={fournisseur.id}>
+            <div className="fourniseur-card__image-container">
+              <img src={"http://localhost:5000/" + fournisseur.image} alt="" />
+            </div>
+            <div className="fournisseur-card__content">
+              <h3>{fournisseur.nom}</h3>
+              <p>{fournisseur.adresse}</p>
 
-        <FournisseurCard>
-          <div className="fourniseur-card__image-container"></div>
-          <div className="fournisseur-card__content">
-            <h3>Auxilis</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
-              excepturi.
-            </p>
-            <div className="fournisseur-card__footer">
-              <ModalAddFournisseur
-                icone={editIcone}
-                modalTitle={"modifier le  fournisseur"}
-              />
-              <ModalAddFournisseur
-                icone={trashIcone}
-                modalTitle={"supprimer le  fournisseur"}
-              />
+              <div className="fournisseur-card__footer">
+                <ModalAddFournisseur
+                  icone={trashIcone}
+                  modalTitle={"supprimer le  fournisseur"}
+                />
+              </div>
             </div>
-          </div>
-        </FournisseurCard>
+          </FournisseurCard>
+        ))}
+
+        {/* 
+     
         <FournisseurCard>
           <div className="fourniseur-card__image-container"></div>
           <div className="fournisseur-card__content">
@@ -2410,7 +2403,7 @@ export default function FournisseurTableau(props) {
               />
             </div>
           </div>
-        </FournisseurCard>
+        </FournisseurCard> */}
       </div>
     </section>
   );

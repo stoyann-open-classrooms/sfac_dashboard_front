@@ -139,7 +139,7 @@ fieldset {
   background-color: #151515;
   border-radius: 10px;
   max-width: 600px;
-  height: 300px;
+  height: auto;
   min-width: 300px;
   padding: 1.2rem 2.8rem;
 }
@@ -157,6 +157,7 @@ fieldset {
 
 .modal-content h2 {
   text-align: center;
+  text-transform: uppercase;
   margin-top: 1rem;
 }
 
@@ -173,6 +174,11 @@ fieldset {
 
 .modal-content form label {
   margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+
+.modal-content form input {
+  padding: 0.4rem;
 }
 
 .confirmation-btn {
@@ -184,5 +190,15 @@ fieldset {
   width: 130px;
   border-radius: 10px;
   margin: 1rem 0;
+}
+
+.btn-form-submit {
+  background-color: red;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 0.8rem, 1.2rem;
+  width: 100px;
 }
 /*# sourceMappingURL=ModalAddFournisseur.css.map */
