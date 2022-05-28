@@ -1,0 +1,31 @@
+@import "../../styles/utils/reset";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+@import "../../styles/utils/animations";
+
+.tableau-right {
+  background-color: grey;
+  height: 75rem;
+  width: 620px;
+  margin-top: 2rem;
+
+  margin-right: 1rem;
+  border-radius: 1rem;
+  animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.header-tableau {
+  background-color: black;
+  color: red;
+  text-align: center;
+  padding-top: 2rem;
+  height: 8rem;
+  font-size: 2rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.body-tableau {
+  overflow: auto;
+  height: 66rem;
+  padding: 1rem;
+}

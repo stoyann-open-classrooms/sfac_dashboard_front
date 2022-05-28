@@ -110,68 +110,30 @@ fieldset {
   }
 }
 
-.fournisseur-tableau {
+.tableau-right {
   background-color: grey;
-  margin: 1rem 3rem;
-  color: white;
-  margin: auto;
-  position: relative;
-  height: 80vh;
-  border-radius: 10px;
-  max-width: 1400px;
+  height: 75rem;
+  width: 620px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
   -webkit-animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.fournisseur-tableau__top {
-  border-radius: 10px 10px 0 0;
+.header-tableau {
   background-color: black;
-  font-size: 1.5rem;
-  padding-top: 2rem;
-  text-align: center;
-  position: relative;
-  height: 10%;
   color: red;
+  text-align: center;
+  padding-top: 2rem;
+  height: 8rem;
+  font-size: 2rem;
+  border-radius: 10px 10px 0 0;
 }
 
-.fournisseur-tableau__top button {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
-.fournisseur-tableau__top button img {
-  height: 3rem;
-}
-
-.fournisseur-tableau__content {
+.body-tableau {
   overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 2rem;
-  height: 80%;
+  height: 66rem;
+  padding: 1rem;
 }
-
-.fournisseur-card__footer {
-  height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 0.5rem;
-}
-/*# sourceMappingURL=FournisseurTableau.css.map */
+/*# sourceMappingURL=TableauRight.css.map */

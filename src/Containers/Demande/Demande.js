@@ -1,9 +1,14 @@
 import React from "react";
-
-export default function Demande() {
+import DemandeFormContainer from "../../Components/DemandeFormContainer/DemandeFormContainer";
+import TableauRight from "../../Components/TableauRight/TableauRight";
+import "./Demande.css";
+export default function Demande(props) {
   return (
     <main>
-      <h1>Demande</h1>
+      <div className="content-demande">
+        <TableauRight></TableauRight>
+        <DemandeFormContainer></DemandeFormContainer>
+      </div>
     </main>
   );
 }

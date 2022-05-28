@@ -111,7 +111,7 @@ export default function Product() {
                   <form id={product.id} onSubmit={deleteProduct}>
                     <div className="info">
                       <img src={warningIcone} alt="" />
-                      <p>êtes vous sur de vouloir supprimer ce fournisseur ?</p>
+                      <p>êtes vous sur de vouloir supprimer ce produit ?</p>
                     </div>
 
                     <button className="btn-form-submit">valider</button>

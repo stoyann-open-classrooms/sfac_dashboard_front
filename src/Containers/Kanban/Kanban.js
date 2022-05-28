@@ -7,6 +7,7 @@ export default function Kanban() {
   return (
     <main>
       <ModalAddFournisseur icone={AddIcone} modalTitle={"Ajouter un Kanban"} />
+      <FournisseurTableau txt={"Kanbans"}></FournisseurTableau>
     </main>
   );
 }

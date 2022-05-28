@@ -110,68 +110,22 @@ fieldset {
   }
 }
 
-.fournisseur-tableau {
-  background-color: grey;
-  margin: 1rem 3rem;
-  color: white;
-  margin: auto;
-  position: relative;
-  height: 80vh;
-  border-radius: 10px;
-  max-width: 1400px;
+.container-demande-form {
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 1rem;
   -webkit-animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.fournisseur-tableau__top {
-  border-radius: 10px 10px 0 0;
-  background-color: black;
-  font-size: 1.5rem;
-  padding-top: 2rem;
+.demande-form__top {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #dadada;
+  height: 5rem;
   text-align: center;
-  position: relative;
-  height: 10%;
-  color: red;
+  padding-top: 1rem;
 }
-
-.fournisseur-tableau__top button {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
-.fournisseur-tableau__top button img {
-  height: 3rem;
-}
-
-.fournisseur-tableau__content {
-  overflow: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 2rem;
-  height: 80%;
-}
-
-.fournisseur-card__footer {
-  height: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 0.5rem;
-}
-/*# sourceMappingURL=FournisseurTableau.css.map */
+/*# sourceMappingURL=DemandeFormContainer.css.map */
