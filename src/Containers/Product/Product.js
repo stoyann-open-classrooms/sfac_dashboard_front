@@ -16,12 +16,66 @@ export default function Product() {
       .then((res) => setProductData(res.data));
   }, []);
   console.log(productData);
+  const [product, setProduct] = useState({});
+
+  const [image, setImage] = useState("");
+  const formData = new FormData();
+  formData.append("image", image);
+  formData.append("designation", product.designation);
+  formData.append("refference", product.refference);
+
+  const handleForm = (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:5000/sfac/api/produit/addProduit", formData);
+    window.location.reload();
+    console.log("submit !");
+  };
+
+  const handleInput = ({ currentTarget }) => {
+    const { name, value } = currentTarget;
+    setProduct({
+      ...product,
+      [name]: value,
+    });
+  };
+  const handleFile = (e) => {
+    console.log(e.target.files[0]);
+    setImage(e.target.files[0]);
+  };
+
   return (
     <main>
-      <ModalAddFournisseur
-        icone={AddIcone}
-        modalTitle={"ajouter un  Produits"}
-      ></ModalAddFournisseur>
+      <ModalAddFournisseur icone={AddIcone} modalTitle={"ajouter un  Produits"}>
+        <form method="POST" onSubmit={handleForm} encType="multipart/form-data">
+          <label htmlFor="product_designation">designation produit</label>
+          <input
+            name="designation"
+            onChange={handleInput}
+            type="text"
+            id="product_designation"
+          />
+          <label htmlFor="product_refference">refference du produit</label>
+          <input
+            name="refference"
+            onChange={handleInput}
+            type="text"
+            id="product_refference"
+          />
+
+          <label for="product_image">image produit</label>
+
+          <input
+            onChange={handleFile}
+            type="file"
+            id="product_image"
+            name="image"
+            accept="image/png, image/jpeg, image/png"
+          />
+          <button className="btn-form-submit" type="submit">
+            Ajouter
+          </button>
+        </form>
+      </ModalAddFournisseur>
       <FournisseurTableau txt={"produits"}>
         {productData.map((product, index) => (
           <FournisseurCard key={product.id}>
@@ -29,8 +83,11 @@ export default function Product() {
               <img src={"http://localhost:5000/" + product.image} alt="" />
             </div>
             <div className="fournisseur-card__content">
-              <h3>{product.designation}</h3>
-              <p>refference : {product.refference}</p>
+              <h3>REF : {product.refference}</h3>
+              <p>
+                {" "}
+                <span>désignation : </span> <br /> {product.designation}
+              </p>
 
               <div className="fournisseur-card__footer">
                 <ModalAddFournisseur
