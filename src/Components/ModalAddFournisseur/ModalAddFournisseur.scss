@@ -84,3 +84,19 @@
   padding: 0.8rem, 1.2rem;
   width: 100px;
 }
+
+.info {
+  height: 2rem;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  img {
+    width: auto;
+    height: 5rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -201,4 +201,30 @@ fieldset {
   padding: 0.8rem, 1.2rem;
   width: 100px;
 }
+
+.info {
+  height: 2rem;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.info img {
+  width: auto;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
 /*# sourceMappingURL=ModalAddFournisseur.css.map */
