@@ -10,9 +10,12 @@ export default function ModalAddFournisseur(props) {
 
   return (
     <>
-      <button onClick={toggleModal} className="btn-modal">
-        <img src={props.icone} alt="bouton ouverture modal" />
-      </button>
+      <abbr title={props.infoBulle}>
+        <button onClick={toggleModal} className="btn-modal">
+          <img src={props.icone} alt="bouton ouverture modal" />
+        </button>
+      </abbr>
+
       {modal && (
         <div className="overlay">
           <div className="modal">

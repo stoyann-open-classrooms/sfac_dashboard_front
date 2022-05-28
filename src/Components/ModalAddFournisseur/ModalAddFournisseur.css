@@ -114,6 +114,11 @@ fieldset {
   padding: 10px;
 }
 
+.btn-modal img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
 .overlay {
   color: white;
   position: absolute;

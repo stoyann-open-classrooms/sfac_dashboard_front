@@ -42,10 +42,21 @@ export default function Product() {
     console.log(e.target.files[0]);
     setImage(e.target.files[0]);
   };
+  const deleteProduct = (e) => {
+    e.preventDefault();
+    axios.delete(`http://localhost:5000/sfac/api/produit/${e.target.id}`);
+
+    window.location.reload();
+    console.log("produit supprimée !");
+  };
 
   return (
     <main>
-      <ModalAddFournisseur icone={AddIcone} modalTitle={"ajouter un  Produits"}>
+      <ModalAddFournisseur
+        infoBulle={"ajouter un produit"}
+        icone={AddIcone}
+        modalTitle={"ajouter un  Produits"}
+      >
         <form method="POST" onSubmit={handleForm} encType="multipart/form-data">
           <label htmlFor="product_designation">designation produit</label>
           <input
@@ -85,7 +96,6 @@ export default function Product() {
             <div className="fournisseur-card__content">
               <h3>REF : {product.refference}</h3>
               <p>
-                {" "}
                 <span>désignation : </span> <br /> {product.designation}
               </p>
 
@@ -98,10 +108,10 @@ export default function Product() {
                   <input type="text" />
                 </ModalAddFournisseur>
                 <ModalAddFournisseur icone={trashIcone}>
-                  <form action="POST">
+                  <form id={product.id} onSubmit={deleteProduct}>
                     <div className="info">
                       <img src={warningIcone} alt="" />
-                      <p>êtes vous sur de vouloir supprimer ce produit ?</p>
+                      <p>êtes vous sur de vouloir supprimer ce fournisseur ?</p>
                     </div>
 
                     <button className="btn-form-submit">valider</button>

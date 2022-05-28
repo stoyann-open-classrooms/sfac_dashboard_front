@@ -55,6 +55,7 @@ export default function Fournisseur() {
   return (
     <main>
       <ModalAddFournisseur
+        infoBulle={"ajouter un fournisseur"}
         icone={AddIcone}
         modalTitle={"ajouter un  fournisseur"}
       >
