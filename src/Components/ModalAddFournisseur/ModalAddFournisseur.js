@@ -18,7 +18,7 @@ export default function ModalAddFournisseur(props) {
           <div className="modal">
             <div className="modal-content">
               <h2>{props.modalTitle}</h2>
-              <form action="">{props.children}</form>
+              <div>{props.children}</div>
               <button onClick={toggleModal} className="close-modal">
                 <img src={CloseIcone} alt="" />
               </button>
