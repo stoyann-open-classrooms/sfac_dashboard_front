@@ -7,7 +7,6 @@ export default function Product() {
   return (
     <main>
       <ModalAddFournisseur icone={AddIcone} modalTitle={"Ajouter un Produit"} />
-      <FournisseurTableau txt={"Produits"} />
     </main>
   );
 }

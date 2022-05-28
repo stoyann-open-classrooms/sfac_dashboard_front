@@ -5,14 +5,21 @@ import { useState } from "react";
 import axios from "axios";
 export default function Fournisseur() {
   const [fournisseur, setFournisseur] = useState({});
-  const [logo, setLogo] = useState();
+
+  const [logo, setLogo] = useState("");
+  const formData = new FormData();
+  formData.append("image", logo);
+  formData.append("nom", fournisseur.nom);
+  formData.append("adresse", fournisseur.adresse);
+  formData.append("site", fournisseur.site);
 
   const handleForm = (e) => {
     e.preventDefault();
     axios.post(
       "http://localhost:5000/sfac/api/fournisseur/addFournisseur",
-      fournisseur
+      formData
     );
+    window.location.reload();
     console.log("submit !");
   };
 
@@ -33,7 +40,7 @@ export default function Fournisseur() {
         icone={AddIcone}
         modalTitle={"ajouter un  fournisseur"}
       >
-        <form onSubmit={handleForm}>
+        <form method="POST" onSubmit={handleForm} encType="multipart/form-data">
           <label htmlFor="fournisseur_name">Nom du fournisseur</label>
           <input
             name="nom"
