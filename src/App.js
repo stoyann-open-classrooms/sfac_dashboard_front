@@ -7,6 +7,7 @@ import Commande from "./Containers/Commande/Commande";
 import Kanban from "./Containers/Kanban/Kanban";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Header from "./Components/Header/Header";
+import DemandeFormContainer from "./Components/DemandeFormContainer/DemandeFormContainer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/produit" element={<Product />} />
         <Route path="/fournisseur" element={<Fournisseur />} />
         <Route path="/commande" element={<Commande />} />
+        <Route path="/commande/:slug" element={<DemandeFormContainer />} />
+
         <Route path="/demmande" element={<Demande />} />
         <Route path="/kanban" element={<Kanban />} />
       </Routes>

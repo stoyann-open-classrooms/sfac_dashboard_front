@@ -1,6 +1,8 @@
 import React from "react";
 import DemandeCard from "../DemandeCard/DemandeCard";
+import { Link } from "react-router-dom";
 import "./TableauRight.css";
+
 export default function TableauRight() {
   return (
     <section className="tableau-right">
@@ -8,30 +10,15 @@ export default function TableauRight() {
         <h1>Demandes a traiter</h1>
       </div>
       <div className="body-tableau">
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
-        <DemandeCard></DemandeCard>
+        <Link
+          to={{
+            pathname: `/demmande`,
+          }}
+        >
+          <DemandeCard>
+            <h3>titre demmande</h3>
+          </DemandeCard>
+        </Link>
       </div>
     </section>
   );

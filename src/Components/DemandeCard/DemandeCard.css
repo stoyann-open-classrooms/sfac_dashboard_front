@@ -1,10 +1,18 @@
 .demande-card {
   background-color: #fff;
-  height: 60px;
+  height: 80px;
   position: relative;
   border-radius: 10px;
   margin: 1rem 0;
+  text-align: center;
+  padding: 0.8rem;
   max-width: 400px;
+  cursor: pointer;
+}
+
+.demande-card:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 .demande-card-trash-btn {
