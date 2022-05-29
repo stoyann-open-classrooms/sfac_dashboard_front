@@ -16,10 +16,12 @@ export default function Fournisseur() {
       .then((res) => setFournisseurData(res.data));
   }, []);
 
-  const deleateFournisseur = (e) => {
+  const deleteFournisseur = (e) => {
     e.preventDefault();
+    axios.delete(`http://localhost:5000/sfac/api/fournisseur/${e.target.id}`);
 
-    console.log("submit !");
+    window.location.reload();
+    console.log("fournisseur supprimée !");
   };
 
   const [fournisseur, setFournisseur] = useState({});
@@ -115,7 +117,11 @@ export default function Fournisseur() {
                   <input type="text" />
                 </ModalAddFournisseur>
                 <ModalAddFournisseur icone={trashIcone}>
-                  <form onSubmit={deleateFournisseur} action="POST">
+                  <form
+                    id={fournisseur.id}
+                    onSubmit={deleteFournisseur}
+                    action="POST"
+                  >
                     <div className="info">
                       <img src={warningIcone} alt="" />
                       <p>êtes vous sur de vouloir supprimer ce fournisseur ?</p>
