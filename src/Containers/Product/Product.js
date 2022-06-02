@@ -96,6 +96,9 @@ export default function Product() {
             <div className="fournisseur-card__content">
               <h3>REF : {product.refference}</h3>
               <p>
+                <span>catègorie: </span> <br /> {product.categorie.categorie}
+              </p>
+              <p>
                 <span>désignation : </span> <br /> {product.designation}
               </p>
 

@@ -5,7 +5,7 @@ import AddIcone from "../../assets/icones/red/add_red.png";
 import axios from "axios";
 import CardKanban from "../../Components/CardKanban/CardKanban";
 export default function Kanban() {
-  const [kanbanData, setKanbanData] = useState({});
+  const [kanbanData, setKanbanData] = useState({ data: [] });
 
   useEffect(() => {
     axios
@@ -18,16 +18,16 @@ export default function Kanban() {
     <main>
       <ModalAddFournisseur icone={AddIcone} modalTitle={"Ajouter un Kanban"} />
       <FournisseurTableau txt={"Kanbans"}>
-        {/* {kanbanData.map((kanban, index) => (
+        {kanbanData.data.map((kanban, index) => (
           <CardKanban key={kanban.id}>
             <hgroup>
               <h3>{kanban.uid_nfc}</h3>
-              <h4>REF Produit</h4>
+              <h4>{kanban.produit.refference}</h4>
             </hgroup>
             <div className="container_img_product"></div>
-            <p>désignation</p>
+            <p>{kanban.produit.designation}</p>
           </CardKanban>
-        ))} */}
+        ))}
       </FournisseurTableau>
     </main>
   );
