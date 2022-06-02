@@ -8,17 +8,17 @@ import FournisseurCard from "../../Components/FournisseurCard/FournisseurCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function Fournisseur() {
-  const [fournisseurData, setFournisseurData] = useState([]);
+  const [fournisseurData, setFournisseurData] = useState({ data: [] });
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/sfac/api/fournisseur/allFournisseurs")
+      .get("http://localhost:9000/sfac/api/fournisseur/allFournisseurs")
       .then((res) => setFournisseurData(res.data));
   }, []);
-
+  console.log(fournisseurData);
   const deleteFournisseur = (e) => {
     e.preventDefault();
-    axios.delete(`http://localhost:5000/sfac/api/fournisseur/${e.target.id}`);
+    axios.delete(`http://localhost:9000/sfac/api/fournisseur/${e.target.id}`);
 
     window.location.reload();
     console.log("fournisseur supprimée !");
@@ -36,7 +36,7 @@ export default function Fournisseur() {
   const handleForm = (e) => {
     e.preventDefault();
     axios.post(
-      "http://localhost:5000/sfac/api/fournisseur/addFournisseur",
+      "http://localhost:9000/sfac/api/fournisseur/addFournisseur",
       formData
     );
     window.location.reload();
@@ -99,10 +99,10 @@ export default function Fournisseur() {
       </ModalAddFournisseur>
 
       <FournisseurTableau txt={"Fournisseurs"}>
-        {fournisseurData.map((fournisseur, index) => (
-          <FournisseurCard key={fournisseur.id}>
+        {fournisseurData.data.map((fournisseur, index) => (
+          <FournisseurCard key={index}>
             <div className="fourniseur-card__image-container">
-              <img src={"http://localhost:5000/" + fournisseur.image} alt="" />
+              <img src={"http://localhost:9000/" + fournisseur.image} alt="" />
             </div>
             <div className="fournisseur-card__content">
               <h3>{fournisseur.nom}</h3>

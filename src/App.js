@@ -20,7 +20,6 @@ function App() {
         <Route path="/fournisseur" element={<Fournisseur />} />
         <Route path="/commande" element={<Commande />} />
         <Route path="/commande/:slug" element={<DemandeFormContainer />} />
-
         <Route path="/demmande" element={<Demande />} />
         <Route path="/kanban" element={<Kanban />} />
       </Routes>

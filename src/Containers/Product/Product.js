@@ -8,11 +8,11 @@ import axios from "axios";
 import warningIcone from "../../assets/icones/red/warning_red.svg";
 import FournisseurCard from "../../Components/FournisseurCard/FournisseurCard";
 export default function Product() {
-  const [productData, setProductData] = useState([]);
+  const [productData, setProductData] = useState({ data: [] });
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/sfac/api/produit/allproduits")
+      .get("http://localhost:9000/sfac/api/produit/allproduits")
       .then((res) => setProductData(res.data));
   }, []);
   console.log(productData);
@@ -26,7 +26,7 @@ export default function Product() {
 
   const handleForm = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/sfac/api/produit/addProduit", formData);
+    axios.post("http://localhost:9000/sfac/api/produit/addProduit", formData);
     window.location.reload();
     console.log("submit !");
   };
@@ -44,7 +44,7 @@ export default function Product() {
   };
   const deleteProduct = (e) => {
     e.preventDefault();
-    axios.delete(`http://localhost:5000/sfac/api/produit/${e.target.id}`);
+    axios.delete(`http://localhost:9000/sfac/api/produit/${e.target.id}`);
 
     window.location.reload();
     console.log("produit supprimée !");
@@ -88,10 +88,10 @@ export default function Product() {
         </form>
       </ModalAddFournisseur>
       <FournisseurTableau txt={"produits"}>
-        {productData.map((product, index) => (
+        {productData.data.map((product, index) => (
           <FournisseurCard key={product.id}>
             <div className="fourniseur-card__image-container">
-              <img src={"http://localhost:5000/" + product.image} alt="" />
+              <img src={"http://localhost:9000/" + product.image} alt="" />
             </div>
             <div className="fournisseur-card__content">
               <h3>REF : {product.refference}</h3>
