@@ -38,7 +38,7 @@ export default function LoginModal() {
         .then((data) => {
           console.log(data);
           window.localStorage.setItem("authToken", data.access_token);
-          //   navigate("/private");
+          navigate("/home");
         });
 
       setValidation("");
