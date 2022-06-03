@@ -5,6 +5,8 @@ import trashIcone from "../../assets/icones/red/trash_red.svg";
 import editIcone from "../../assets/icones/edit_icone.svg";
 import warningIcone from "../../assets/icones/red/warning_red.svg";
 import FournisseurCard from "../../Components/FournisseurCard/FournisseurCard";
+import { Link } from "react-router-dom";
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function Fournisseur() {
@@ -100,39 +102,46 @@ export default function Fournisseur() {
 
       <FournisseurTableau txt={"Fournisseurs"}>
         {fournisseurData.data.map((fournisseur, index) => (
-          <FournisseurCard key={index}>
-            <div className="fourniseur-card__image-container">
-              <img src={"http://localhost:9000/" + fournisseur.image} alt="" />
-            </div>
-            <div className="fournisseur-card__content">
-              <h3>{fournisseur.nom}</h3>
-              <p>{fournisseur.adresse}</p>
-
-              <div className="fournisseur-card__footer">
-                <ModalAddFournisseur
-                  icone={editIcone}
-                  modalTitle={"modifier le  fournisseur"}
-                >
-                  <label htmlFor="name"></label>
-                  <input type="text" />
-                </ModalAddFournisseur>
-                <ModalAddFournisseur icone={trashIcone}>
-                  <form
-                    id={fournisseur.id}
-                    onSubmit={deleteFournisseur}
-                    action="POST"
-                  >
-                    <div className="info">
-                      <img src={warningIcone} alt="" />
-                      <p>êtes vous sur de vouloir supprimer ce fournisseur ?</p>
-                    </div>
-
-                    <button className="btn-form-submit">valider</button>
-                  </form>
-                </ModalAddFournisseur>
+          <Link to={`/fournisseurDetails/${fournisseur.id}`}>
+            <FournisseurCard key={fournisseur.id}>
+              <div className="fourniseur-card__image-container">
+                <img
+                  src={"http://localhost:9000/" + fournisseur.image}
+                  alt=""
+                />
               </div>
-            </div>
-          </FournisseurCard>
+              <div className="fournisseur-card__content">
+                <h3>{fournisseur.nom}</h3>
+                <p>{fournisseur.adresse}</p>
+
+                <div className="fournisseur-card__footer">
+                  <ModalAddFournisseur
+                    icone={editIcone}
+                    modalTitle={"modifier le  fournisseur"}
+                  >
+                    <label htmlFor="name"></label>
+                    <input type="text" />
+                  </ModalAddFournisseur>
+                  <ModalAddFournisseur icone={trashIcone}>
+                    <form
+                      id={fournisseur.id}
+                      onSubmit={deleteFournisseur}
+                      action="POST"
+                    >
+                      <div className="info">
+                        <img src={warningIcone} alt="" />
+                        <p>
+                          êtes vous sur de vouloir supprimer ce fournisseur ?
+                        </p>
+                      </div>
+
+                      <button className="btn-form-submit">valider</button>
+                    </form>
+                  </ModalAddFournisseur>
+                </div>
+              </div>
+            </FournisseurCard>
+          </Link>
         ))}
       </FournisseurTableau>
     </main>

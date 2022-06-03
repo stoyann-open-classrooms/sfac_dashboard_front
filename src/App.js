@@ -8,7 +8,9 @@ import Kanban from "./Containers/Kanban/Kanban";
 import Sidebar from "./Components/Sidebar/Sidebar";
 import Header from "./Components/Header/Header";
 import DemandeFormContainer from "./Components/DemandeFormContainer/DemandeFormContainer";
-
+import ProductDetails from "./Containers/ProductDetails/ProductDetails";
+import ErrorPage from "./Containers/ErrorPage/ErrorPage";
+import FournisseurDetails from "./Containers/FournisseurDetails/FournisseurDetails";
 function App() {
   return (
     <div className="App">
@@ -17,11 +19,17 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/produit" element={<Product />} />
+        <Route path="/produitDetails/:id" element={<ProductDetails />} />
         <Route path="/fournisseur" element={<Fournisseur />} />
+        <Route
+          path="/fournisseurDetails/:id"
+          element={<FournisseurDetails />}
+        />
         <Route path="/commande" element={<Commande />} />
         <Route path="/commande/:slug" element={<DemandeFormContainer />} />
         <Route path="/demmande" element={<Demande />} />
         <Route path="/kanban" element={<Kanban />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );

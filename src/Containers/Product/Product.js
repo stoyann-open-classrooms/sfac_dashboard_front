@@ -7,17 +7,30 @@ import editIcone from "../../assets/icones/edit_icone.svg";
 import axios from "axios";
 import warningIcone from "../../assets/icones/red/warning_red.svg";
 import FournisseurCard from "../../Components/FournisseurCard/FournisseurCard";
-export default function Product() {
-  const [productData, setProductData] = useState({ data: [] });
+import { Link } from "react-router-dom";
 
+export default function Product() {
+  const [isLoading, setIsLoding] = useState(true);
+  const [productData, setProductData] = useState({ data: [] });
+  const [categories, setCategories] = useState({ data: [] });
+
+  // fetch getAllProduits
   useEffect(() => {
     axios
       .get("http://localhost:9000/sfac/api/produit/allproduits")
-      .then((res) => setProductData(res.data));
+      .then((res) => setProductData(res.data))
+      .then((res) => setIsLoding(false));
   }, []);
-  console.log(productData);
-  const [product, setProduct] = useState({});
 
+  // fetch getAllCategories
+  useEffect(() => {
+    axios
+      .get("http://localhost:9000/sfac/api/categorie/allcategories")
+      .then((res) => setCategories(res.data));
+  }, []);
+  console.log(categories);
+
+  const [product, setProduct] = useState({});
   const [image, setImage] = useState("");
   const formData = new FormData();
   formData.append("image", image);
@@ -88,41 +101,43 @@ export default function Product() {
         </form>
       </ModalAddFournisseur>
       <FournisseurTableau txt={"produits"}>
-        {productData.data.map((product, index) => (
-          <FournisseurCard key={product.id}>
-            <div className="fourniseur-card__image-container">
-              <img src={"http://localhost:9000/" + product.image} alt="" />
-            </div>
-            <div className="fournisseur-card__content">
-              <h3>REF : {product.refference}</h3>
-              <p>
-                <span>catègorie: </span> <br /> {product.categorie.categorie}
-              </p>
-              <p>
-                <span>désignation : </span> <br /> {product.designation}
-              </p>
-
-              <div className="fournisseur-card__footer">
-                <ModalAddFournisseur
-                  icone={editIcone}
-                  modalTitle={"modifier le produit"}
-                >
-                  <label htmlFor="name"></label>
-                  <input type="text" />
-                </ModalAddFournisseur>
-                <ModalAddFournisseur icone={trashIcone}>
-                  <form id={product.id} onSubmit={deleteProduct}>
-                    <div className="info">
-                      <img src={warningIcone} alt="" />
-                      <p>êtes vous sur de vouloir supprimer ce produit ?</p>
-                    </div>
-
-                    <button className="btn-form-submit">valider</button>
-                  </form>
-                </ModalAddFournisseur>
+        {productData.data.map((product) => (
+          <Link to={`/produitDetails/${product.id}`}>
+            <FournisseurCard key={product.id}>
+              <div className="fourniseur-card__image-container">
+                <img src={"http://localhost:9000/" + product.image} alt="" />
               </div>
-            </div>
-          </FournisseurCard>
+              <div className="fournisseur-card__content">
+                <h3>REF : {product.refference}</h3>
+                <p>
+                  <span>Catégorie : </span> <br /> {product.categorie.categorie}
+                </p>
+                <p>
+                  <span>désignation : </span> <br /> {product.designation}
+                </p>
+
+                <div className="fournisseur-card__footer">
+                  <ModalAddFournisseur
+                    icone={editIcone}
+                    modalTitle={"modifier le produit"}
+                  >
+                    <label htmlFor="name"></label>
+                    <input type="text" />
+                  </ModalAddFournisseur>
+                  <ModalAddFournisseur icone={trashIcone}>
+                    <form id={product.id} onSubmit={deleteProduct}>
+                      <div className="info">
+                        <img src={warningIcone} alt="" />
+                        <p>êtes vous sur de vouloir supprimer ce produit ?</p>
+                      </div>
+
+                      <button className="btn-form-submit">valider</button>
+                    </form>
+                  </ModalAddFournisseur>
+                </div>
+              </div>
+            </FournisseurCard>
+          </Link>
         ))}
       </FournisseurTableau>
     </main>
