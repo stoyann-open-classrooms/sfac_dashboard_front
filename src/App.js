@@ -11,13 +11,15 @@ import DemandeFormContainer from "./Components/DemandeFormContainer/DemandeFormC
 import ProductDetails from "./Containers/ProductDetails/ProductDetails";
 import ErrorPage from "./Containers/ErrorPage/ErrorPage";
 import FournisseurDetails from "./Containers/FournisseurDetails/FournisseurDetails";
+import Login from "./Containers/Login/Login";
 function App() {
   return (
     <div className="App">
       <Header />
       <Sidebar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/produit" element={<Product />} />
         <Route path="/produitDetails/:id" element={<ProductDetails />} />
         <Route path="/fournisseur" element={<Fournisseur />} />

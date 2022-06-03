@@ -1,0 +1,36 @@
+.main-login {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  padding-top: 2rem;
+  h1 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  form {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+    padding: 2rem;
+    input {
+      padding: 0.3rem;
+    }
+    label {
+      margin-bottom: 0.3rem;
+      margin-top: 1.3rem;
+    }
+    button {
+      background-color: red;
+      color: white;
+      width: 120px;
+      margin-top: 2rem;
+      padding: 0.4rem;
+      font-weight: bold;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+  }
+}

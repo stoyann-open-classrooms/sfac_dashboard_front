@@ -8,7 +8,6 @@ import axios from "axios";
 import warningIcone from "../../assets/icones/red/warning_red.svg";
 import FournisseurCard from "../../Components/FournisseurCard/FournisseurCard";
 import { Link } from "react-router-dom";
-
 export default function Product() {
   const [isLoading, setIsLoding] = useState(true);
   const [productData, setProductData] = useState({ data: [] });
@@ -100,6 +99,7 @@ export default function Product() {
           </button>
         </form>
       </ModalAddFournisseur>
+
       <FournisseurTableau txt={"produits"}>
         {productData.data.map((product) => (
           <Link to={`/produitDetails/${product.id}`}>

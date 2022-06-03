@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=Login.css.map */
+.main-login {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  padding-top: 2rem;
+}
+
+.main-login h1 {
+  color: red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main-login form {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.main-login form input {
+  padding: 0.3rem;
+}
+
+.main-login form label {
+  margin-bottom: 0.3rem;
+  margin-top: 1.3rem;
+}
+
+.main-login form button {
+  background-color: red;
+  color: white;
+  width: 120px;
+  margin-top: 2rem;
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Login.css.map */

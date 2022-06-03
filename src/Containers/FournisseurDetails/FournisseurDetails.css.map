@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,0BAA0B,CAAC;EACzB,UAAU,EAAE,MAAM;EAClB,cAAc,EAAE,SAAS;EACzB,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,WAAW,CAAC;EACV,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,GAAG;CACjB",
+    "sources": [
+        "FournisseurDetails.scss"
+    ],
+    "names": [],
+    "file": "FournisseurDetails.css"
+}
