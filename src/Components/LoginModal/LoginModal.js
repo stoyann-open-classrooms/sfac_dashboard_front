@@ -8,12 +8,6 @@ import { Link } from "react-router-dom";
 export default function LoginModal() {
   const dispatch = useDispatch();
 
-  const toogleModal = () => {
-    dispatch({
-      type: "CLOSE",
-    });
-  };
-
   const [validation, setValidation] = useState("");
   const navigate = useNavigate();
   const inputs = useRef([]);
@@ -29,11 +23,11 @@ export default function LoginModal() {
 
     try {
       const payload = {
-        identifier: inputs.current[0].value,
+        email: inputs.current[0].value,
         password: inputs.current[1].value,
       };
 
-      fetch("http://localhost:1337/api/auth/local", {
+      fetch("http://localhost:9000/sfac/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,11 +37,8 @@ export default function LoginModal() {
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
-          window.localStorage.setItem("authToken", data.jwt);
-          window.localStorage.setItem("username", data.user.username);
-          window.localStorage.setItem("mail", data.user.email);
-          navigate("/private");
-          toogleModal();
+          window.localStorage.setItem("authToken", data.access_token);
+          //   navigate("/private");
         });
 
       setValidation("");
@@ -58,7 +49,7 @@ export default function LoginModal() {
   return (
     <>
       <div>
-        <div onClick={toogleModal} className="modal-layout"></div>
+        <div className="modal-layout"></div>
         <div className="modal-dialog">
           <form onSubmit={handleForm}>
             <div class="form-control">
