@@ -1,16 +1,13 @@
 import React from "react";
 import "./Login.css";
+import Logo from "../../assets/logo/sfac-logo14.jpg";
+import LoginModal from "../../Components/LoginModal/LoginModal";
 export default function Login() {
   return (
     <main className="main-login">
-      <h1>Page de connexion</h1>
-      <form>
-        <label htmlFor="">Entrez votre e-mail</label>
-        <input type="text" />
-        <label htmlFor="">Entrez votre mot de passe</label>
-        <input type="password" />
-        <button type="submit">Connection</button>
-      </form>
+      <h1>Connexion</h1>
+      <LoginModal></LoginModal>
+      {/* <img className="form-logo" src={Logo} alt="" /> */}
     </main>
   );
 }

@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ErrorPage() {
   return (
-    <div>
+    <main>
       <h1>PAGE 404</h1>
-    </div>
+    </main>
   );
 }
